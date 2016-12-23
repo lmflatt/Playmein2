@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play Me In</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+    <div id="body-img" class="transparent"></div>
+
+    <div class="container">
+        <img src="assets/PlayMeInLogoText.png" id="logo" />
+        <img src="assets/PlayMeInLogoTextShadow.png" id="logo2" class="transparent"/>
+        <form class="song-form" action="/new-song" method="post">
+            <select required name="genre">
+                <option selected disabled>Choose a Genre</option>
+                <option value="epicMinor">Cinematic Epic in Minor Key</option>
+                <option disabled>More coming soon...</option>
+            </select>
+            <button type="submit">Create!</button>
+        </form>
+        <a href="/admin">Upload</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
